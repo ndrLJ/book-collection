@@ -1,0 +1,115 @@
+@media (min-width: 640px) {
+  .books {
+    flex-direction: row;
+  }
+}
+
+* {
+  font-family: 'Martel', serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('/assets/images/bg.jpg');
+}
+
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url('/assets/images/bg.jpg');
+}
+
+.container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.books {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 189, 98);
+  padding: 1rem;
+  margin: 1.5rem;
+  min-width: 17rem;
+  min-height: 32rem;
+  box-sizing: border-box;
+  border: 5px solid black;
+}
+
+.button {
+  padding-top: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(250, 150, 84);
+  margin: 20% auto;
+  padding: 2rem;
+  border: 5px solid black;
+  width: 20rem;
+  height: 40rem;
+}
+
+.form label {
+  background-color: rgb(249, 189, 98);
+  
+}
+
+.form input {
+  background-color: white;
+}
+
+#new-book {
+  background-color: rgb(249, 189, 98);
+  display: flex;
+  color: white;
+  border-color: black;
+  text-align: center;
+  margin: auto;
+  font-size: 1rem;
+  min-width: 6rem;
+  min-height: 2rem;
+}
+
+.read {
+  background-color: rgb(10, 71, 10);
+  color: white;
+}
+
+.notread {
+  background-color: rgb(99, 17, 17);
+  color: white;
+}
+
+.remove-book{
+  background-color: rgb(99, 17, 17);
+  color: white;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: rgb(249, 189, 98);
+  border-bottom: 5px solid black;
+}
